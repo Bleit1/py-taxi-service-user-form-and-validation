@@ -35,3 +35,4 @@ def validate_license_number(license_number: str) -> str:
     elif not license_number[3:].isdigit():
         raise ValidationError("Last 5 characters should be digits")
     return license_number
+
