@@ -118,4 +118,3 @@ def toggle_assign_to_car(request: HttpRequest,
     else:
         driver.cars.add(pk)
     return HttpResponseRedirect(reverse_lazy("taxi:car-detail", args=[pk]))
-
